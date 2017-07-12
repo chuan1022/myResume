@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.section{
+	position: relative;
+	width: 100%;
+	color: #fff;
+}
+.page{
+	position: relative;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*侧边栏*/
+.select{
+	width: 40px;
+	height: 240px;
+	position: fixed;
+	z-index: 99;
+	right: 0;	
+}
+.select .cirlcle,.select .glyphicon{
+	position: absolute;
+	display: inline-block;
+	left: 5px;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	font-size: 10px;
+	text-align: center;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.select .glyphicon{
+	transform: scale(2);
+	transition: 0.3s;
+} 
+/*下页按钮*/
+.nextPage{
+	position: fixed;
+	cursor: pointer;
+	top: auto;
+	width: 20px;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -10px;
+	font-size: 20px;
+	z-index: 99;
+	animation: 1.5s move2 linear infinite;
+}
+.tag{
+	position: fixed;
+	height: 20px;
+	text-align: center;
+	font: 15px/20px "微软雅黑";
+	width: 60px;
+	z-index: 99;
+	background: rgba(0,0,0,0.5);
+}
+/*首页*/
+.gitImg{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: fixed;
+	left: 30px;
+	top: 10px;
+	z-index: 99;
+}
+.mySelf{
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	margin-left: -50px;
+	border-radius: 50%;
+}
+.mySelf+p{
+	position: absolute;
+	text-align: center;
+	margin-left:-400px ;
+	left: 50%;
+	top: 275px;
+	width: 800px;
+	font: 25px/50px "微软雅黑";
+	border-bottom: 1px solid #fff;
+}
+.introduce{
+	padding-top: 50px;
+	text-align: center;
+	position: absolute;
+	font: 18px/50px "微软雅黑";
+	width: 100%;
+	top: 300px;
+}
+
+/*关于我*/
+.pageTitle {
+	position: absolute;
+	text-align: center;
+	top: 50px;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+}
+.aboutMe{
+	text-align: center;
+	position: absolute;
+	width: 800px;
+	top: 150px;
+	margin-left: -400px;
+	left: 50%;
+}
+.aboutMe div{
+	font: 16px/60px "微软雅黑";
+	float: left;
+	margin-left: 40px;
+	width: 150px;
+	height: 150px;
+	
+}
+.aboutMe div span{
+	display: inline-block;
+	text-align: center;
+	font-size: 40px;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	background: #4da688;
+	border-radius: 50%;	
+	transition: 0.2s;
+	box-shadow: 0 0 5px;
+}
+.aboutMe div span:hover{
+	transform: scale(0.9);
+}
+.aboutMe + p{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 320px;
+	font: 20px/40px "微软雅黑";
+}
+/*技能栈*/
+.skill{
+	position: absolute;
+	text-align: center;
+	top: 150px;
+	font: 20px/40px "微软雅黑";
+}
+/*经历*/
+.experience{
+	width: 700px;
+	height: 350px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	margin-top: 150px;
+	border-radius: 10px;
+}
+.experience:nth-of-type(2),.experience:nth-of-type(3){
+	display: none;
+}
+.links{
+	width: 230px;
+	position: absolute;
+	left: 50%;
+	margin-left: -115px;
+	margin-top: 520px;
+	font-size: 0;
+}
+.links div{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ccc;
+}
+.links div:nth-of-type(2){
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.experience img{
+	position: absolute;
+	top:130px;
+	left: 20px;
+	animation: 1s move1 linear ;
+}
+.experience div{
+	position: absolute;
+	color: #31708f;
+	left: 200px;
+	top: 50px;
+	font: 15px/30px "微软雅黑";
+	animation: 1s move1 linear ;
+}
+.experience div p:nth-of-type(1){
+	font-size: 20px;
+}
+.experience div ul{
+	color: #000;
+	position: relative;
+	left: 20px;
+}
+
+
+/*作品集*/
+.myworks{
+	width:900px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 120px;
+	margin-left: -450px;
+}
+.myworks div{
+	position: relative;
+	float: left;
+	width: 400px;
+	height: 200px;
+	margin: 20px 25px 10px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+.workName{
+	color: #d0706e;
+	font: 18px/30px "微软雅黑";
+}
+.workName+p{
+	color: #000;
+	font: 15px/25px "微软雅黑";
+}
+.workName+p+a{
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	text-decoration: none;
+	display: inline-block;
+	color:#4e4949;
+	font: 15px/30px "微软雅黑";
+	text-align: center;
+	width: 150px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.workName+p+a:hover{
+	background: #d0706e;
+	color: #fff;
+}
+.workName+p+a img{
+	position: relative;
+	bottom: 3px;
+	left: 10px;
+	height: 20px;
+	width: 20px;
+	
+}
+/*联系我*/
+.foot{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-top: 5px;
+	height: 60px;
+	border-top: 1px solid #80786a;
+	font: 10px/10px  "微软雅黑";
+	color: #504f4b;
+	text-align: center;
+}
+/*动画*/
+@keyframes move1{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes move2{
+	from{}
+	to{	opacity: 0;
+		bottom: 20px;
+	}
+}
+@keyframes leftOut{
+	from{left: 0;}
+	to{left: 50%;}
+}
+@keyframes rightOut{
+	from{right: 0;}
+	to{left: 50%;}
+}
+.leftOut{
+	animation: 1s leftOut linear;
+}
+.rightOut{
+	animation: 1s rightOut linear;
+}
